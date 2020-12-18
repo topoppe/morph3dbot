@@ -358,6 +358,10 @@
 <vertex x="24" y="9"/>
 <vertex x="24" y="0"/>
 </polygon>
+<text x="29.06224375" y="19.88920625" size="2.54" layer="25">+</text>
+<text x="29.537475" y="25.3733625" size="2.54" layer="25">-</text>
+<text x="30.670721875" y="25.3733625" size="2.54" layer="26" rot="MR0">-</text>
+<text x="31.145953125" y="19.88920625" size="2.54" layer="26" rot="MR0">+</text>
 </plain>
 <libraries>
 <library name="morphbot">
