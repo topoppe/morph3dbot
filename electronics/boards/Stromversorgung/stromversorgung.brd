@@ -1976,8 +1976,6 @@ design rules under a new name.</description>
 <vertex x="48" y="1" curve="-90"/>
 <vertex x="47" y="0"/>
 </polygon>
-<wire x1="14.646834375" y1="35.799090625" x2="20.995678125" y2="35.799090625" width="0.5" layer="1"/>
-<wire x1="10.608078125" y1="39.837846875" x2="14.646834375" y2="35.799090625" width="0.5" layer="1"/>
 <contactref element="IC2" pad="1"/>
 <contactref element="C1" pad="2"/>
 <contactref element="X1" pad="2"/>
