@@ -390,7 +390,6 @@
 <vertex x="24" y="9"/>
 <vertex x="24" y="0"/>
 </polygon>
-<text x="45.424440625" y="43.780675" size="0.8128" layer="25" rot="R90">Power</text>
 <text x="19.077415625" y="10.61233125" size="0.8128" layer="25">GND</text>
 <text x="22.5004125" y="10.581159375" size="0.8128" layer="25">7</text>
 <text x="25.061690625" y="10.568040625" size="0.8128" layer="25">8</text>
@@ -3930,6 +3929,12 @@ Source: http://www.osram.convergy.de/ ... LG_LY Q971.pdf</description>
 <rectangle x1="2.575" y1="5.465" x2="2.605" y2="5.475" layer="21"/>
 <text x="5.98" y="1.21" size="3" layer="21" font="vector">Morph3DBot</text>
 </package>
+<package name="OPEN-PNP-FIDUCIAL" library_version="30" library_locally_modified="yes">
+<smd name="FID$1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100"/>
+<circle x="0" y="0" radius="0.75" width="0.5" layer="39"/>
+<text x="-2.54" y="1.27" size="1.27" layer="21">&gt;NAME</text>
+<circle x="0" y="0" radius="0.75" width="0.5" layer="41"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -4171,6 +4176,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="17.61630625" y="46.952225" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="U$1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" package="LOGO_MORPHBOT" value="LOGO_MORPHBOT5MM" x="47.314" y="1.0827625" smashed="yes" rot="R90"/>
+<element name="FID1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" package="OPEN-PNP-FIDUCIAL" value="OPEN-PNP-FIDUCIAL" x="1.59386875" y="1.585840625" smashed="yes"/>
+<element name="FID2" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" package="OPEN-PNP-FIDUCIAL" value="OPEN-PNP-FIDUCIAL" x="1.50239375" y="46.63590625" smashed="yes"/>
+<element name="FID3" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" package="OPEN-PNP-FIDUCIAL" value="OPEN-PNP-FIDUCIAL" x="46.599640625" y="46.5495125" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">

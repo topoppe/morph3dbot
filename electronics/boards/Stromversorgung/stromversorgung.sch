@@ -23575,10 +23575,21 @@ Grid 5.08 mm&lt;p&gt;
 <text x="0" y="-0.03" size="0.012" layer="21" font="vector">/Users/tobias/Documents/Arbeit_HRW/Morph3Dbot/logo.bmp</text>
 <text x="3.108" y="0.816" size="1.5" layer="21" font="vector">Morph3DBot</text>
 </package>
+<package name="OPEN-PNP-FIDUCIAL" library_version="30" library_locally_modified="yes">
+<smd name="FID$1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100"/>
+<circle x="0" y="0" radius="0.75" width="0.5" layer="39"/>
+<text x="-2.54" y="1.27" size="1.27" layer="21">&gt;NAME</text>
+<circle x="0" y="0" radius="0.75" width="0.5" layer="41"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LOGO_MORPHBOT" library_version="30" library_locally_modified="yes">
 <text x="0" y="0" size="1.778" layer="94">Logo Morphbot</text>
+</symbol>
+<symbol name="OPEN-PNP-FIDUCIAL" library_version="30" library_locally_modified="yes">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="3.5921" width="0.254" layer="94"/>
+<text x="-5.08" y="5.08" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -23593,6 +23604,18 @@ Grid 5.08 mm&lt;p&gt;
 </technologies>
 </device>
 <device name="3MM" package="LOGO_MOPRHBOT_3MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPEN-PNP-FIDUCIAL" prefix="FID" library_version="30" library_locally_modified="yes">
+<gates>
+<gate name="FID$1" symbol="OPEN-PNP-FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OPEN-PNP-FIDUCIAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -23626,6 +23649,9 @@ Grid 5.08 mm&lt;p&gt;
 <part name="J3" library="morphbot" deviceset="GROVE_CONNECTOR" device="2.0_1X4" package3d_urn="urn:adsk.eagle:package:24855299/1"/>
 <part name="J4" library="morphbot" deviceset="GROVE_CONNECTOR" device="2.0_1X4" package3d_urn="urn:adsk.eagle:package:24855299/1"/>
 <part name="U$1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="LOGO_MORPHBOT" device="5MM"/>
+<part name="FID1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
+<part name="FID2" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
+<part name="FID3" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23706,6 +23732,15 @@ Grid 5.08 mm&lt;p&gt;
 <attribute name="VALUE" x="17.018" y="110.744" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="U$1" gate="G$1" x="165.1" y="38.1" smashed="yes"/>
+<instance part="FID1" gate="FID$1" x="185.42" y="40.64" smashed="yes">
+<attribute name="NAME" x="180.34" y="45.72" size="1.778" layer="94"/>
+</instance>
+<instance part="FID2" gate="FID$1" x="193.04" y="40.64" smashed="yes">
+<attribute name="NAME" x="187.96" y="45.72" size="1.778" layer="94"/>
+</instance>
+<instance part="FID3" gate="FID$1" x="200.66" y="40.64" smashed="yes">
+<attribute name="NAME" x="195.58" y="45.72" size="1.778" layer="94"/>
+</instance>
 </instances>
 <busses>
 </busses>

@@ -21443,10 +21443,21 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/1441/0900766b81441b76
 <rectangle x1="2.575" y1="5.465" x2="2.605" y2="5.475" layer="21"/>
 <text x="5.98" y="1.21" size="3" layer="21" font="vector">Morph3DBot</text>
 </package>
+<package name="OPEN-PNP-FIDUCIAL" library_version="30" library_locally_modified="yes">
+<smd name="FID$1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100"/>
+<circle x="0" y="0" radius="0.75" width="0.5" layer="39"/>
+<text x="-2.54" y="1.27" size="1.27" layer="21">&gt;NAME</text>
+<circle x="0" y="0" radius="0.75" width="0.5" layer="41"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LOGO_MORPHBOT" library_version="30" library_locally_modified="yes">
 <text x="0" y="0" size="1.778" layer="94">Logo Morphbot</text>
+</symbol>
+<symbol name="OPEN-PNP-FIDUCIAL" library_version="30" library_locally_modified="yes">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="3.5921" width="0.254" layer="94"/>
+<text x="-5.08" y="5.08" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -21456,6 +21467,18 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/1441/0900766b81441b76
 </gates>
 <devices>
 <device name="5MM" package="LOGO_MORPHBOT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPEN-PNP-FIDUCIAL" prefix="FID" library_version="30" library_locally_modified="yes">
+<gates>
+<gate name="FID$1" symbol="OPEN-PNP-FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OPEN-PNP-FIDUCIAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -21492,6 +21515,9 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/1441/0900766b81441b76
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="C" package3d_urn="urn:adsk.eagle:package:23422/2" value="ST(Semtech) CK1C470M-CRD54 - 47uF"/>
 <part name="U$1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="LOGO_MORPHBOT" device="5MM"/>
 <part name="IC1" library="samacsys" deviceset="ATTINY441-SSU" device=""/>
+<part name="FID1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
+<part name="FID2" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
+<part name="FID3" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21575,6 +21601,15 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/1441/0900766b81441b76
 <instance part="IC1" gate="G$1" x="86.36" y="139.7" smashed="yes">
 <attribute name="NAME" x="212.09" y="147.32" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="212.09" y="144.78" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="FID1" gate="FID$1" x="157.48" y="5.08" smashed="yes">
+<attribute name="NAME" x="152.4" y="10.16" size="1.778" layer="94"/>
+</instance>
+<instance part="FID2" gate="FID$1" x="149.86" y="5.08" smashed="yes">
+<attribute name="NAME" x="144.78" y="10.16" size="1.778" layer="94"/>
+</instance>
+<instance part="FID3" gate="FID$1" x="142.24" y="5.08" smashed="yes">
+<attribute name="NAME" x="137.16" y="10.16" size="1.778" layer="94"/>
 </instance>
 </instances>
 <busses>

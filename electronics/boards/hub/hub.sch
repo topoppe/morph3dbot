@@ -4854,10 +4854,21 @@ DIN A4, landscape with extra doc field</description>
 <text x="0" y="-0.03" size="0.012" layer="21" font="vector">/Users/tobias/Documents/Arbeit_HRW/Morph3Dbot/logo.bmp</text>
 <text x="3.108" y="0.816" size="1.5" layer="21" font="vector">Morph3DBot</text>
 </package>
+<package name="OPEN-PNP-FIDUCIAL" library_version="30" library_locally_modified="yes">
+<smd name="FID$1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100"/>
+<circle x="0" y="0" radius="0.75" width="0.5" layer="39"/>
+<text x="-2.54" y="1.27" size="1.27" layer="21">&gt;NAME</text>
+<circle x="0" y="0" radius="0.75" width="0.5" layer="41"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LOGO_MORPHBOT" library_version="30" library_locally_modified="yes">
 <text x="0" y="0" size="1.778" layer="94">Logo Morphbot</text>
+</symbol>
+<symbol name="OPEN-PNP-FIDUCIAL" library_version="30" library_locally_modified="yes">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="3.5921" width="0.254" layer="94"/>
+<text x="-5.08" y="5.08" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4872,6 +4883,18 @@ DIN A4, landscape with extra doc field</description>
 </technologies>
 </device>
 <device name="3MM" package="LOGO_MOPRHBOT_3MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPEN-PNP-FIDUCIAL" prefix="FID" library_version="30" library_locally_modified="yes">
+<gates>
+<gate name="FID$1" symbol="OPEN-PNP-FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OPEN-PNP-FIDUCIAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4900,6 +4923,9 @@ DIN A4, landscape with extra doc field</description>
 <part name="J7" library="morphbot" deviceset="GROVE_CONNECTOR" device="2.0_1X4" package3d_urn="urn:adsk.eagle:package:24855299/1"/>
 <part name="J8" library="morphbot" deviceset="GROVE_CONNECTOR" device="2.0_1X4" package3d_urn="urn:adsk.eagle:package:24855299/1"/>
 <part name="U$1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="LOGO_MORPHBOT" device="5MM"/>
+<part name="FID1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
+<part name="FID2" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
+<part name="FID3" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4946,6 +4972,15 @@ DIN A4, landscape with extra doc field</description>
 <attribute name="VALUE" x="67.818" y="118.364" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="U$1" gate="G$1" x="5.08" y="2.54" smashed="yes"/>
+<instance part="FID1" gate="FID$1" x="30.48" y="5.08" smashed="yes">
+<attribute name="NAME" x="25.4" y="10.16" size="1.778" layer="94"/>
+</instance>
+<instance part="FID2" gate="FID$1" x="38.1" y="5.08" smashed="yes">
+<attribute name="NAME" x="33.02" y="10.16" size="1.778" layer="94"/>
+</instance>
+<instance part="FID3" gate="FID$1" x="45.72" y="5.08" smashed="yes">
+<attribute name="NAME" x="40.64" y="10.16" size="1.778" layer="94"/>
+</instance>
 </instances>
 <busses>
 </busses>

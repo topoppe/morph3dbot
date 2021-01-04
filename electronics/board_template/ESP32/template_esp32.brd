@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -4441,6 +4441,12 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <text x="0" y="-0.03" size="0.012" layer="21" font="vector">/Users/tobias/Documents/Arbeit_HRW/Morph3Dbot/logo.bmp</text>
 <text x="3.108" y="0.816" size="1.5" layer="21" font="vector">Morph3DBot</text>
 </package>
+<package name="OPEN-PNP-FIDUCIAL" library_version="30" library_locally_modified="yes">
+<smd name="FID$1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100"/>
+<circle x="0" y="0" radius="0.75" width="0.5" layer="39"/>
+<text x="-2.54" y="1.27" size="1.27" layer="21">&gt;NAME</text>
+<circle x="0" y="0" radius="0.75" width="0.5" layer="41"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -5020,6 +5026,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="13.968846875" y="29.92159375" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" package="LOGO_MOPRHBOT_3MM" value="LOGO_MORPHBOT3MM" x="0.088325" y="44.75038125" smashed="yes"/>
+<element name="FID1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" package="OPEN-PNP-FIDUCIAL" value="OPEN-PNP-FIDUCIAL" x="2.252828125" y="2.971290625" smashed="yes"/>
+<element name="FID2" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" package="OPEN-PNP-FIDUCIAL" value="OPEN-PNP-FIDUCIAL" x="37.827975" y="2.543028125" smashed="yes"/>
+<element name="FID3" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" package="OPEN-PNP-FIDUCIAL" value="OPEN-PNP-FIDUCIAL" x="1.295975" y="36.88231875" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -5027,7 +5036,6 @@ design rules under a new name.</description>
 <contactref element="J2" pad="4"/>
 <contactref element="C1" pad="2"/>
 <contactref element="LED1" pad="C"/>
-<wire x1="1.419528125" y1="1.3874875" x2="23.4645875" y2="1.3874875" width="0.8128" layer="16"/>
 <wire x1="23.4645875" y1="1.3874875" x2="23.977990625" y2="1.900890625" width="0.8128" layer="16"/>
 <wire x1="23.977990625" y1="1.900890625" x2="23.977990625" y2="7.8975875" width="0.8128" layer="16"/>
 <wire x1="21.232190625" y1="10.6433875" x2="19.649328125" y2="10.6433875" width="0.8128" layer="16"/>
