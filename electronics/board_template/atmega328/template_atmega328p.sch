@@ -22231,6 +22231,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="FID1" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
 <part name="FID2" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
 <part name="FID3" library="topo-eng" library_urn="urn:adsk.eagle:library:6646478" deviceset="OPEN-PNP-FIDUCIAL" device=""/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/1" value="CL05B104KO5NNNC - 100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -23026,6 +23027,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <attribute name="NAME" x="165.1" y="131.0386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="165.1" y="128.778" size="1.778" layer="96"/>
 </instance>
+<instance part="C11" gate="G$1" x="144.78" y="121.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="140.081" y="122.936" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="137.541" y="122.936" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -23208,22 +23213,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </net>
 <net name="USB_DP" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
-<label x="27.94" y="22.86" size="1.27" layer="95" ratio="5" xref="yes"/>
-</segment>
-<segment>
-<pinref part="D1" gate="G$1" pin="K_2"/>
-<wire x1="86.36" y1="27.94" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
-<label x="88.9" y="27.94" size="1.27" layer="95" ratio="5" xref="yes"/>
-</segment>
-<segment>
 <pinref part="IC2" gate="G$1" pin="D+"/>
 <wire x1="129.54" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
 <label x="121.92" y="91.44" size="1.27" layer="95" ratio="5" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="USB_DN" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="3"/>
 <wire x1="22.86" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
@@ -23234,10 +23227,22 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="86.36" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
 <label x="88.9" y="30.48" size="1.27" layer="95" ratio="5" xref="yes"/>
 </segment>
+</net>
+<net name="USB_DN" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="D-"/>
 <wire x1="129.54" y1="88.9" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
 <label x="121.92" y="88.9" size="1.27" layer="95" ratio="5" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<label x="27.94" y="22.86" size="1.27" layer="95" ratio="5" xref="yes"/>
+</segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="K_2"/>
+<wire x1="86.36" y1="27.94" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
+<label x="88.9" y="27.94" size="1.27" layer="95" ratio="5" xref="yes"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -23319,6 +23324,20 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="149.86" y1="127" x2="154.94" y2="127" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="127" x2="156.21" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DTR" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="DTR"/>
+<wire x1="144.78" y1="111.76" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="RESET" class="0">
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="127" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
+<label x="144.78" y="137.16" size="1.27" layer="95" ratio="5" rot="R90" xref="yes"/>
 </segment>
 </net>
 </nets>

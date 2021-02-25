@@ -25965,11 +25965,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </net>
 <net name="USB_DP" class="0">
 <segment>
-<pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
-<label x="27.94" y="22.86" size="1.27" layer="95" ratio="5" xref="yes"/>
-</segment>
-<segment>
 <pinref part="D1" gate="G$1" pin="K_2"/>
 <wire x1="86.36" y1="27.94" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
 <label x="88.9" y="27.94" size="1.27" layer="95" ratio="5" xref="yes"/>
@@ -25979,13 +25974,13 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="129.54" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
 <label x="121.92" y="91.44" size="1.27" layer="95" ratio="5" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="USB_DN" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="3"/>
 <wire x1="22.86" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
 <label x="27.94" y="25.4" size="1.27" layer="95" ratio="5" xref="yes"/>
 </segment>
+</net>
+<net name="USB_DN" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="K_3"/>
 <wire x1="86.36" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
@@ -25995,6 +25990,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="IC2" gate="G$1" pin="D-"/>
 <wire x1="129.54" y1="88.9" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
 <label x="121.92" y="88.9" size="1.27" layer="95" ratio="5" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<label x="27.94" y="22.86" size="1.27" layer="95" ratio="5" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
