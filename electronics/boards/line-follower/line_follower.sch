@@ -23601,30 +23601,6 @@ Source: &lt;a href="http://www.vishay.com/docs/83760/tcrt5000.pdf"&gt; Datasheet
 <busses>
 </busses>
 <nets>
-<net name="SCL" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="34.548721875" y1="88.9" x2="43.18" y2="88.9" width="0.1524" layer="91"/>
-<label x="43.18" y="88.9" size="1.27" layer="95" ratio="5" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="34.548721875" y1="73.66" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
-<label x="43.18" y="73.66" size="1.27" layer="95" ratio="5" xref="yes"/>
-</segment>
-</net>
-<net name="SDA" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="34.548721875" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
-<label x="43.18" y="91.44" size="1.27" layer="95" ratio="5" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="34.548721875" y1="76.2" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
-<label x="43.18" y="76.2" size="1.27" layer="95" ratio="5" xref="yes"/>
-</segment>
-</net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
@@ -23884,6 +23860,16 @@ Source: &lt;a href="http://www.vishay.com/docs/83760/tcrt5000.pdf"&gt; Datasheet
 <wire x1="86.36" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
 <label x="83.82" y="124.46" size="1.27" layer="95" ratio="5" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="34.548721875" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
+<label x="43.18" y="91.44" size="1.27" layer="95" ratio="5" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="34.548721875" y1="76.2" x2="43.18" y2="76.2" width="0.1524" layer="91"/>
+<label x="43.18" y="76.2" size="1.27" layer="95" ratio="5" xref="yes"/>
+</segment>
 </net>
 <net name="SCK/SCL" class="0">
 <segment>
@@ -23895,6 +23881,16 @@ Source: &lt;a href="http://www.vishay.com/docs/83760/tcrt5000.pdf"&gt; Datasheet
 <pinref part="IC1" gate="G$1" pin="PA4_(PCINT4/ADC4/AIN11/TOCC3/T1/RXD1/SCL/SCK)"/>
 <wire x1="215.9" y1="127" x2="218.44" y2="127" width="0.1524" layer="91"/>
 <label x="218.44" y="127" size="1.27" layer="95" ratio="5" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="34.548721875" y1="88.9" x2="43.18" y2="88.9" width="0.1524" layer="91"/>
+<label x="43.18" y="88.9" size="1.27" layer="95" ratio="5" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="34.548721875" y1="73.66" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
+<label x="43.18" y="73.66" size="1.27" layer="95" ratio="5" xref="yes"/>
 </segment>
 </net>
 <net name="RESET" class="0">

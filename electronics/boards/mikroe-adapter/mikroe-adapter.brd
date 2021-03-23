@@ -35,7 +35,7 @@
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -391,29 +391,6 @@
 <vertex x="24" y="0"/>
 </polygon>
 <text x="45.424440625" y="43.780675" size="0.8128" layer="25" rot="R90">Power</text>
-<polygon width="0.2" layer="29">
-<vertex x="30.861125" y="34.565584375"/>
-<vertex x="38.599003125" y="34.565584375"/>
-<vertex x="38.599003125" y="42.02285625"/>
-<vertex x="30.861125" y="42.02285625"/>
-<vertex x="30.861125" y="34.556546875"/>
-</polygon>
-<polygon width="0.2" layer="41">
-<vertex x="37.043425" y="42.028959375"/>
-<vertex x="38.6407625" y="42.028959375"/>
-<vertex x="38.6407625" y="40.181678125"/>
-<vertex x="36.694915625" y="40.181678125"/>
-<vertex x="36.694915625" y="41.769615625"/>
-<vertex x="36.99620625" y="41.769615625"/>
-<vertex x="36.99620625" y="42.076178125"/>
-</polygon>
-<polygon width="0.2" layer="41">
-<vertex x="30.92323125" y="36.033984375"/>
-<vertex x="30.92323125" y="34.38451875"/>
-<vertex x="31.05035" y="34.38451875"/>
-<vertex x="31.05035" y="36.03095625"/>
-<vertex x="30.920203125" y="36.03095625"/>
-</polygon>
 <text x="18" y="26" size="1.4224" layer="25">AN</text>
 <text x="18" y="23.46" size="1.4224" layer="25">RST</text>
 <text x="18" y="20.92" size="1.4224" layer="25">CS</text>
