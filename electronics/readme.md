@@ -1,4 +1,4 @@
-#Platinen
+# *Morph3DBot*-Platinen
 
 Alle Platinen für das *Morph3DBot* System haben den selben Formfaktor und werden auf die Basisstruktur montiert.
 Die Platinen werden untereinander mit einem vierpoligen Kabel verbunden. Über dieses Kabel werden die Platinen mit Strom versorgt und können
